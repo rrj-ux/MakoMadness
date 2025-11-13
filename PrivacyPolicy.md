@@ -124,8 +124,8 @@ Opt out of personalized ads
 Withdraw consent
 
 Send requests to:
-support@2n2ak.com
- (or replace with your preferred email)
+rrj@agologistics.com
+
 
 10. Changes to the Privacy Policy
 
@@ -137,6 +137,7 @@ https://github.com/rrj-ux/MakoMadness/blob/main/PrivacyPolicy.md
 
 MakoMadness Studios
 A division of 2N2AK LLC
-Email: support@2n2ak.com
+Email: rrj@agologistics.com
 
 Website: (Insert your GitHub Pages landing page once created)
+
