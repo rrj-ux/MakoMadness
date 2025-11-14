@@ -28,6 +28,10 @@
             color: #2980b9;
             margin-top: 25px;
         }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
         .step-box {
             background-color: #e8f4f8;
             padding: 15px;
@@ -53,6 +57,12 @@
             border-left: 4px solid #ffc107;
             margin: 20px 0;
         }
+        .success {
+            background-color: #d4edda;
+            padding: 15px;
+            border-left: 4px solid #28a745;
+            margin: 20px 0;
+        }
         ul {
             margin-left: 20px;
         }
@@ -65,32 +75,43 @@
             border-radius: 3px;
             font-family: monospace;
         }
+        .version-badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🗑️ MakoMadness Data Deletion Instructions</h1>
+        <h1>🗑️ MakoMadness Data Deletion Instructions <span class="version-badge">v2.0</span></h1>
         
         <p>MakoMadness Studios respects your privacy and your right to control your data. This page explains how to delete all data associated with MakoMadness from your device and our services.</p>
 
         <h2>What Data Does MakoMadness Store?</h2>
         
         <div class="step-box">
-            <strong>Local Data (On Your Device):</strong>
+            <strong>📱 Local Data (On Your Device):</strong>
             <ul>
                 <li>Game progress and current level</li>
                 <li>High scores and achievements</li>
-                <li>Game settings and preferences</li>
+                <li>Game settings and preferences (sound, tutorial status)</li>
                 <li>Consent preferences (privacy policy acceptance)</li>
             </ul>
         </div>
 
         <div class="step-box">
-            <strong>Cloud Data (Through Third Parties):</strong>
+            <strong>☁️ Cloud Data (Through Third Parties):</strong>
             <ul>
                 <li>Anonymous leaderboard scores (Unity Leaderboards)</li>
                 <li>Anonymous device analytics (Unity Analytics)</li>
-                <li>Advertising identifiers (Unity Ads, AdMob)</li>
+                <li>Advertising identifiers (Unity Ads, Unity LevelPlay, AdMob, and partner networks)</li>
+                <li>Ad performance metrics (clicks, views, impressions)</li>
+                <li>Crash reports and diagnostic data</li>
             </ul>
         </div>
 
@@ -109,27 +130,32 @@
                 <li>Go to <strong>Apps</strong> or <strong>Applications</strong></li>
                 <li>Find and tap <strong>MakoMadness</strong></li>
                 <li>Tap <strong>Storage</strong></li>
-                <li>Tap <strong>Clear Data</strong> (deletes game progress)</li>
-                <li>Tap <strong>Clear Cache</strong> (optional, for temporary files)</li>
-                <li>Tap <strong>Uninstall</strong> to completely remove the app</li>
+                <li>Tap <strong>Clear Data</strong> (deletes all game progress and settings)</li>
+                <li>Tap <strong>Clear Cache</strong> (optional, removes temporary files)</li>
+                <li>Go back and tap <strong>Uninstall</strong> to completely remove the app</li>
             </ol>
+            <p><strong>Result:</strong> All local data is immediately deleted from your device.</p>
         </div>
 
         <div class="platform">
-            <h4>🍎 iOS Devices (iPhone/iPad) - When Available</h4>
+            <h4>🍎 iOS Devices (iPhone/iPad)</h4>
+            <p><strong>Option A: Long Press Method</strong></p>
             <ol>
                 <li>Long-press the <strong>MakoMadness</strong> icon on your home screen</li>
                 <li>Tap <strong>Remove App</strong></li>
                 <li>Select <strong>Delete App</strong></li>
                 <li>Confirm deletion</li>
             </ol>
-            <p><em>Alternatively:</em></p>
+            
+            <p><strong>Option B: Settings Method</strong></p>
             <ol>
                 <li>Open <strong>Settings</strong></li>
                 <li>Go to <strong>General</strong> → <strong>iPhone Storage</strong></li>
                 <li>Find <strong>MakoMadness</strong></li>
                 <li>Tap <strong>Delete App</strong></li>
+                <li>Confirm deletion</li>
             </ol>
+            <p><strong>Result:</strong> All app data is permanently removed from your iOS device.</p>
         </div>
 
         <h3>Method 2: Clear Game Data Without Uninstalling</h3>
@@ -142,31 +168,34 @@
                 <li>Tap <strong>Storage</strong></li>
                 <li>Tap <strong>Clear Data</strong></li>
             </ol>
-            <p>This deletes your game progress but keeps the app installed.</p>
+            <p>This deletes your game progress but keeps the app installed for a fresh start.</p>
         </div>
 
         <div class="platform">
             <h4>🍎 iOS: Reset Game Data</h4>
             <p>iOS does not allow selective data deletion without uninstalling. To reset your progress:</p>
             <ol>
-                <li>Uninstall MakoMadness</li>
+                <li>Uninstall MakoMadness (see Method 1 above)</li>
                 <li>Reinstall from the App Store</li>
+                <li>Launch the game for a fresh start</li>
             </ol>
         </div>
 
         <h3>Method 3: Request Deletion of Cloud/Leaderboard Data</h3>
         
         <div class="step-box">
-            <p>If you want to delete your anonymous leaderboard scores or request removal of analytics data:</p>
+            <p>If you want to delete your anonymous leaderboard scores or request removal of analytics data collected through third-party services:</p>
             
             <ol>
                 <li>Email us at: <strong><a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a></strong></li>
                 <li>Subject line: <strong>"MakoMadness Data Deletion Request"</strong></li>
-                <li>Include:
+                <li>Include in your email:
                     <ul>
                         <li>Your device type (Android/iOS)</li>
+                        <li>Device model (e.g., "Fire HD 8", "iPhone 14")</li>
                         <li>Approximate date you installed the game</li>
                         <li>Your approximate high score (to help identify your data)</li>
+                        <li>Specific data you want deleted (leaderboards, analytics, all data)</li>
                     </ul>
                 </li>
             </ol>
@@ -174,80 +203,150 @@
             <p><strong>Response Time:</strong> We will respond within 7 business days and complete deletion within 30 days.</p>
         </div>
 
-        <h3>Method 4: Opt Out of Advertising Data</h3>
+        <h3>Method 4: Reset Advertising Identifiers</h3>
         
+        <p>Resetting your advertising ID removes the connection between your device and past ad interactions:</p>
+
         <div class="platform">
-            <h4>📱 Android: Limit Ad Tracking</h4>
+            <h4>📱 Android: Reset Advertising ID</h4>
             <ol>
                 <li>Open <strong>Settings</strong></li>
                 <li>Go to <strong>Google</strong> → <strong>Ads</strong></li>
-                <li>Enable <strong>Opt out of Ads Personalization</strong></li>
                 <li>Tap <strong>Reset advertising ID</strong></li>
+                <li>Confirm reset</li>
             </ol>
+            <p><strong>Optional:</strong> Enable <strong>"Opt out of Ads Personalization"</strong> (though MakoMadness already uses non-personalized ads)</p>
         </div>
 
         <div class="platform">
-            <h4>🍎 iOS: Limit Ad Tracking</h4>
+            <h4>🍎 iOS: Limit Ad Tracking and Reset Identifier</h4>
+            <p><strong>iOS 14.5 and later:</strong></p>
             <ol>
                 <li>Open <strong>Settings</strong></li>
                 <li>Go to <strong>Privacy & Security</strong></li>
                 <li>Tap <strong>Tracking</strong></li>
-                <li>Disable <strong>Allow Apps to Request to Track</strong></li>
+                <li>Disable <strong>"Allow Apps to Request to Track"</strong></li>
+            </ol>
+            
+            <p><strong>To reset your advertising identifier:</strong></p>
+            <ol>
+                <li>Open <strong>Settings</strong></li>
+                <li>Go to <strong>Privacy & Security</strong> → <strong>Apple Advertising</strong></li>
+                <li>Tap <strong>Reset Advertising Identifier</strong></li>
             </ol>
         </div>
 
         <h2>What Happens After Deletion?</h2>
         
+        <div class="success">
+            <strong>✅ Immediate Effects:</strong>
+            <ul style="margin: 10px 0 0 20px;">
+                <li>All game progress and scores are deleted from your device immediately</li>
+                <li>Your device no longer sends new data to Unity, AdMob, or ad networks</li>
+                <li>Local settings and preferences are cleared</li>
+            </ul>
+        </div>
+
         <ul>
-            <li>✅ All game progress and scores are <strong>immediately</strong> deleted from your device</li>
-            <li>✅ Your device no longer sends data to Unity or AdMob</li>
-            <li>✅ Leaderboard entries are removed within <strong>30 days</strong> of request</li>
-            <li>✅ Anonymous analytics data is disassociated from your device ID</li>
-            <li>⚠️ Aggregated, anonymized analytics (e.g., "1000 players completed Level 5") may remain for business purposes</li>
+            <li>✅ <strong>Device Data:</strong> Deleted immediately when you clear data or uninstall</li>
+            <li>✅ <strong>Leaderboard Data:</strong> Removed within 30 days of request (anonymous scores)</li>
+            <li>✅ <strong>Advertising Data:</strong> Disassociated from your device ID when you reset advertising identifier</li>
+            <li>✅ <strong>Analytics Data:</strong> Anonymized and disassociated from your device within 30-90 days</li>
+            <li>⚠️ <strong>Aggregated Data:</strong> Anonymous, aggregated analytics (e.g., "1000 players completed Level 5") may remain for business purposes but cannot be linked back to you</li>
         </ul>
 
         <h2>Data Deletion for Specific Services</h2>
 
         <div class="step-box">
-            <h4>Unity Analytics & Leaderboards</h4>
-            <p>Unity retains anonymous analytics data as outlined in their privacy policy:</p>
+            <h4>🎮 Unity Analytics & Leaderboards</h4>
+            <p>Unity Technologies manages analytics and leaderboard data:</p>
             <ul>
-                <li>Leaderboard data: Can be deleted upon request</li>
-                <li>Analytics data: Anonymized after device unlink</li>
+                <li><strong>Leaderboard Scores:</strong> Can be deleted upon request (email us)</li>
+                <li><strong>Analytics Data:</strong> Anonymized after device identifier removal</li>
+                <li><strong>Crash Reports:</strong> Retained for diagnostic purposes but contain no personal information</li>
             </ul>
             <p>Learn more: <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a></p>
         </div>
 
         <div class="step-box">
-            <h4>Google AdMob</h4>
+            <h4>📱 Google AdMob</h4>
             <p>AdMob uses non-personalized ads for MakoMadness. To manage your Google advertising data:</p>
             <ul>
-                <li>Visit: <a href="https://myaccount.google.com/data-and-privacy" target="_blank">Google Privacy Settings</a></li>
+                <li>Visit: <a href="https://myaccount.google.com/data-and-privacy" target="_blank">Google Privacy & Personalization</a></li>
                 <li>Manage <strong>Ad Settings</strong></li>
-                <li>Reset your <strong>Advertising ID</strong></li>
+                <li>Review and delete <strong>Activity Controls</strong></li>
+                <li>Reset your <strong>Advertising ID</strong> on your device (see Method 4 above)</li>
             </ul>
+            <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+        </div>
+
+        <div class="step-box">
+            <h4>🎯 Unity LevelPlay / IronSource</h4>
+            <p>IronSource's ad mediation platform collects ad performance data:</p>
+            <ul>
+                <li><strong>Data Collected:</strong> Device advertising ID, ad interactions, device type</li>
+                <li><strong>Retention:</strong> Typically 90 days, then automatically deleted</li>
+                <li><strong>Deletion:</strong> Reset your device's advertising ID (see Method 4)</li>
+            </ul>
+            <p>For specific requests: <a href="https://www.is.com/privacy-policy/" target="_blank">IronSource Privacy Policy</a></p>
+            <p>Or contact: <a href="mailto:privacy@ironsrc.com">privacy@ironsrc.com</a></p>
+        </div>
+
+        <div class="step-box">
+            <h4>📢 Other Ad Networks</h4>
+            <p>MakoMadness may display ads from additional networks through Unity LevelPlay mediation:</p>
+            <ul>
+                <li><strong>AppLovin:</strong> <a href="https://www.applovin.com/privacy/" target="_blank">Privacy Policy</a> | <a href="https://www.applovin.com/optout/" target="_blank">Opt-Out</a></li>
+                <li><strong>Vungle:</strong> <a href="https://vungle.com/privacy/" target="_blank">Privacy Policy</a> | <a href="https://vungle.com/opt-out/" target="_blank">Opt-Out</a></li>
+                <li><strong>AdColony:</strong> <a href="https://www.adcolony.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+                <li><strong>Chartboost:</strong> <a href="https://answers.chartboost.com/en-us/articles/200780269" target="_blank">Privacy Policy</a></li>
+                <li><strong>Tapjoy:</strong> <a href="https://www.tapjoy.com/legal/players/privacy-policy/" target="_blank">Privacy Policy</a></li>
+            </ul>
+            <p><strong>General Opt-Out:</strong> Resetting your device's advertising ID (Method 4) will disconnect your device from all ad networks.</p>
         </div>
 
         <h2>Frequently Asked Questions</h2>
 
         <div class="step-box">
             <h4>Q: Can I recover my data after deletion?</h4>
-            <p><strong>A:</strong> No. Once deleted, your game progress and scores cannot be recovered. We do not back up player data.</p>
+            <p><strong>A:</strong> No. Once deleted, your game progress, scores, and settings cannot be recovered. We do not back up player data to our servers.</p>
         </div>
 
         <div class="step-box">
             <h4>Q: Will my data be deleted immediately?</h4>
-            <p><strong>A:</strong> Local device data is deleted immediately. Cloud data (leaderboards) may take up to 30 days to fully remove from all systems.</p>
+            <p><strong>A:</strong> Local device data is deleted immediately when you clear data or uninstall. Cloud data (leaderboards, analytics) may take up to 30 days to fully remove from all third-party systems.</p>
         </div>
 
         <div class="step-box">
             <h4>Q: Does MakoMadness collect personal information?</h4>
-            <p><strong>A:</strong> No. MakoMadness does not collect names, emails, addresses, or other personal information. All data is anonymous.</p>
+            <p><strong>A:</strong> No. MakoMadness does not collect names, emails, addresses, phone numbers, or other personal information. All data collected is anonymous and consists of device identifiers, game progress, and usage analytics.</p>
         </div>
 
         <div class="step-box">
             <h4>Q: What if I'm a parent and want to delete my child's data?</h4>
-            <p><strong>A:</strong> Follow the same steps above. If you need assistance, contact us at <a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a> with "Child Data Deletion Request" in the subject line.</p>
+            <p><strong>A:</strong> Follow the same steps above. If you need assistance or have concerns about children's privacy, contact us at <a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a> with "Child Data Deletion Request" in the subject line. We will prioritize and respond within 7 business days.</p>
+        </div>
+
+        <div class="step-box">
+            <h4>Q: Do I need to delete data from each ad network separately?</h4>
+            <p><strong>A:</strong> No. The easiest method is to reset your device's advertising ID (Method 4). This disconnects your device from all ad networks at once. For complete removal, you can also uninstall the app and contact us for leaderboard deletion.</p>
+        </div>
+
+        <div class="step-box">
+            <h4>Q: Will deleting data affect my ability to play MakoMadness?</h4>
+            <p><strong>A:</strong> If you clear data or uninstall and reinstall, you'll start fresh with a new game. If you only reset your advertising ID, the game continues normally with your current progress intact.</p>
+        </div>
+
+        <div class="step-box">
+            <h4>Q: What about GDPR and CCPA rights?</h4>
+            <p><strong>A:</strong> You have the right to:</p>
+            <ul style="margin-top: 10px;">
+                <li><strong>Access:</strong> Request information about data we collect (email us)</li>
+                <li><strong>Deletion:</strong> Request deletion of your data (use methods above)</li>
+                <li><strong>Portability:</strong> Request a copy of your data (email us, though we collect minimal data)</li>
+                <li><strong>Object:</strong> Object to data processing (stop using the app or contact us)</li>
+            </ul>
+            <p>Contact us at <a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a> with "Privacy Rights Request" in the subject line.</p>
         </div>
 
         <h2>Need Help?</h2>
@@ -259,13 +358,25 @@
             Acworth, GA 30101<br>
             Email: <a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a></p>
             
-            <p><strong>For data deletion requests or questions:</strong></p>
-            <ul>
+            <p><strong>For data deletion requests or privacy questions:</strong></p>
+            <ul style="margin-left: 20px;">
                 <li>Email: <a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a></li>
-                <li>Subject: "MakoMadness Data Deletion Request"</li>
+                <li>Subject: "MakoMadness Data Deletion Request" or "Privacy Inquiry"</li>
                 <li>Response time: Within 7 business days</li>
+                <li>Completion time: Within 30 days</li>
             </ul>
+            
+            <p><strong>Include in your request:</strong> Device type, approximate installation date, and specific data to delete</p>
         </div>
+
+        <h2>Additional Resources</h2>
+        
+        <p>For more information about managing your privacy:</p>
+        <ul>
+            <li><strong>Network Advertising Initiative:</strong> <a href="https://thenai.org/opt-out/" target="_blank">Opt-Out Tool</a></li>
+            <li><strong>Digital Advertising Alliance:</strong> <a href="https://youradchoices.com/" target="_blank">Ad Choices</a></li>
+            <li><strong>Your Online Choices (EU):</strong> <a href="https://www.youronlinechoices.com/" target="_blank">Opt-Out Options</a></li>
+        </ul>
 
         <hr style="margin-top: 30px;">
         <p style="text-align: center; color: #7f8c8d;">
