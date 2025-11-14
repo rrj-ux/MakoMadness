@@ -28,6 +28,10 @@
             color: #2980b9;
             margin-top: 25px;
         }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
         .effective-date {
             color: #7f8c8d;
             font-style: italic;
@@ -39,20 +43,40 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        .highlight-box {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
         ul {
             margin-left: 20px;
         }
         li {
             margin-bottom: 8px;
         }
+        .version-badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🦈 MakoMadness Privacy Policy</h1>
-        <p class="effective-date">Effective Date: November 13, 2025</p>
+        <h1>🦈 MakoMadness Privacy Policy <span class="version-badge">v2.0</span></h1>
+        <p class="effective-date">Effective Date: November 13, 2025 | Last Updated: November 13, 2025</p>
         
         <p>MakoMadness Studios, a division of 2N2AK LLC ("we," "our," or "us"), is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect information when you play MakoMadness.</p>
+
+        <div class="highlight-box">
+            <strong>🔒 Privacy Commitment:</strong> MakoMadness is designed to be safe for all ages, including children under 13. We do not collect personal information and comply with COPPA, GDPR, and all applicable privacy regulations.
+        </div>
 
         <h2>1. Information We Collect</h2>
         
@@ -60,18 +84,31 @@
         <ul>
             <li><strong>Game Progress:</strong> Your current level, scores, and game settings are saved locally on your device</li>
             <li><strong>High Scores:</strong> Your best scores are stored to track your achievements</li>
+            <li><strong>Preferences:</strong> Sound settings, tutorial completion status, and other game preferences</li>
         </ul>
 
         <h3>Information Collected Through Third-Party Services:</h3>
         <ul>
             <li><strong>Unity Leaderboards:</strong> Anonymous player IDs and high scores for global rankings (no personal information)</li>
             <li><strong>Unity Analytics:</strong> Device type, operating system, game performance data, and crash reports to help us improve the game</li>
-            <li><strong>Unity Ads:</strong> Non-personalized advertising data (no tracking of personal information or browsing history)</li>
+            <li><strong>Advertising Data:</strong> Device advertising ID, ad interaction metrics, and app usage information for serving non-personalized ads</li>
+            <li><strong>Device Information:</strong> Device model, operating system version, screen size, and language settings (used for optimization and compatibility)</li>
         </ul>
 
         <h2>2. Children's Privacy (COPPA Compliance)</h2>
         
         <p><strong>MakoMadness is designed to be safe for players of all ages, including children under 13.</strong></p>
+        
+        <div class="highlight-box">
+            <strong>🛡️ Child Safety Measures:</strong>
+            <ul style="margin: 10px 0 0 20px;">
+                <li>No collection of personal information from children</li>
+                <li>No usernames, email addresses, or names required</li>
+                <li>Only anonymous identifiers used</li>
+                <li>All ads are non-personalized and COPPA-compliant</li>
+                <li>No social features that could expose children to strangers</li>
+            </ul>
+        </div>
         
         <ul>
             <li>We do <strong>NOT</strong> knowingly collect personal information from children</li>
@@ -79,80 +116,203 @@
             <li>Leaderboards use anonymous identifiers only</li>
             <li>Ads shown are non-personalized and comply with COPPA requirements</li>
             <li>We do <strong>NOT</strong> share children's information with third parties for marketing purposes</li>
+            <li>We do <strong>NOT</strong> enable behavioral advertising for users identified as children</li>
         </ul>
 
-        <p><strong>Parents:</strong> If you believe your child has provided personal information to us, please contact us immediately at rrj@agologistics.com, and we will delete it.</p>
+        <p><strong>Parents:</strong> If you believe your child has provided personal information to us, please contact us immediately at rrj@agologistics.com, and we will delete it promptly.</p>
 
         <h2>3. How We Use Information</h2>
         
         <p>We use collected information to:</p>
         <ul>
-            <li>Save your game progress and settings</li>
-            <li>Display anonymous leaderboards</li>
-            <li>Improve game performance and fix bugs</li>
-            <li>Show non-personalized advertisements</li>
-            <li>Understand how players interact with the game</li>
+            <li>Save your game progress and settings locally on your device</li>
+            <li>Display anonymous leaderboards to show top scores</li>
+            <li>Improve game performance, fix bugs, and optimize user experience</li>
+            <li>Show non-personalized advertisements to support free gameplay</li>
+            <li>Understand how players interact with the game to make improvements</li>
+            <li>Ensure compatibility across different devices and operating systems</li>
+            <li>Diagnose and fix technical issues and crashes</li>
         </ul>
 
-        <h2>4. Third-Party Services</h2>
+        <h2>4. Third-Party Services and Advertising</h2>
         
-        <p>MakoMadness uses the following third-party services:</p>
+        <p>MakoMadness uses or may use the following third-party services:</p>
         
+        <h3>Analytics and Game Services:</h3>
         <ul>
-            <li><strong>Unity Technologies:</strong> For leaderboards, analytics, and advertising
+            <li><strong>Unity Technologies:</strong> For leaderboards, analytics, game services, and advertising
                 <br><a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a>
             </li>
-            <li><strong>AdMob (Google):</strong> For non-personalized advertisements
+        </ul>
+
+        <h3>Advertising Services:</h3>
+        <p>We use multiple advertising services to support free gameplay. All ads served are non-personalized and comply with COPPA and GDPR requirements.</p>
+
+        <ul>
+            <li><strong>Unity Ads:</strong> Primary advertising platform
+                <br><a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a>
+            </li>
+            <li><strong>Google AdMob:</strong> Non-personalized advertisements
                 <br><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+            </li>
+            <li><strong>Unity LevelPlay (IronSource):</strong> Ad mediation platform that optimizes ad delivery
+                <br><a href="https://www.is.com/privacy-policy/" target="_blank">IronSource Privacy Policy</a>
             </li>
         </ul>
 
-        <p>These services may collect device information and usage data in accordance with their own privacy policies. We have configured these services to be COPPA-compliant and use non-personalized modes.</p>
+        <h3>Ad Mediation Networks:</h3>
+        <p>Through Unity LevelPlay, we may serve ads from the following advertising networks. All networks are configured for non-personalized ads and COPPA compliance:</p>
+        
+        <ul>
+            <li><strong>AppLovin:</strong> <a href="https://www.applovin.com/privacy/" target="_blank">Privacy Policy</a></li>
+            <li><strong>Vungle:</strong> <a href="https://vungle.com/privacy/" target="_blank">Privacy Policy</a></li>
+            <li><strong>AdColony:</strong> <a href="https://www.adcolony.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+            <li><strong>Chartboost:</strong> <a href="https://answers.chartboost.com/en-us/articles/200780269" target="_blank">Privacy Policy</a></li>
+            <li><strong>Tapjoy:</strong> <a href="https://www.tapjoy.com/legal/players/privacy-policy/" target="_blank">Privacy Policy</a></li>
+            <li><strong>InMobi:</strong> <a href="https://www.inmobi.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+            <li><strong>Pangle:</strong> <a href="https://www.pangleglobal.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>Meta Audience Network:</strong> <a href="https://www.facebook.com/privacy/policy/" target="_blank">Privacy Policy</a></li>
+        </ul>
 
-        <h2>5. Data Security</h2>
+        <h3>How Ad Mediation Works:</h3>
+        <div class="highlight-box">
+            <p><strong>What is Ad Mediation?</strong> Ad mediation allows us to work with multiple advertising networks to:</p>
+            <ul style="margin: 10px 0 0 20px;">
+                <li>Show you ads that are relevant to the game (not based on personal data)</li>
+                <li>Ensure ads load quickly and reliably</li>
+                <li>Support the game's development while keeping it free</li>
+                <li>Maintain high ad quality standards</li>
+            </ul>
+            <p style="margin-top: 10px;"><strong>Important:</strong> The mediation platform may automatically select which ad network to use, but all ads are non-personalized and age-appropriate.</p>
+        </div>
+
+        <p>These advertising services may collect:</p>
+        <ul>
+            <li>Device advertising identifier (IDFA on iOS, AAID on Android)</li>
+            <li>Device type, model, and operating system version</li>
+            <li>App usage and ad interaction data (clicks, views, dismissals)</li>
+            <li>Approximate location based on IP address (country/region level only)</li>
+            <li>Ad performance metrics and frequency capping data</li>
+        </ul>
+
+        <h2>5. iOS-Specific Privacy Features</h2>
+        
+        <h3>App Tracking Transparency (ATT)</h3>
+        <p>iOS 14.5 and later requires apps to request permission before tracking users across other apps and websites. When you first launch MakoMadness on iOS, you may see this permission prompt:</p>
+        
+        <div class="highlight-box">
+            <strong>"Allow MakoMadness to track your activity across other companies' apps and websites?"</strong>
+            <p style="margin-top: 10px;"><strong>Your Options:</strong></p>
+            <ul style="margin: 10px 0 0 20px;">
+                <li><strong>Ask App Not to Track:</strong> We will only show non-personalized ads (this is our default behavior regardless of your choice)</li>
+                <li><strong>Allow:</strong> Helps us optimize ad delivery and may provide slightly better ad experiences</li>
+            </ul>
+            <p style="margin-top: 10px;"><strong>Important:</strong> MakoMadness functions identically regardless of your choice. We respect your privacy decision.</p>
+        </div>
+
+        <p>You can change your tracking preference anytime:</p>
+        <ul>
+            <li><strong>iOS Settings → Privacy & Security → Tracking → MakoMadness</strong></li>
+            <li>Or: <strong>iOS Settings → MakoMadness → Allow Tracking</strong></li>
+        </ul>
+
+        <h3>SKAdNetwork</h3>
+        <p>We use Apple's SKAdNetwork framework for privacy-preserving ad attribution. This allows us to measure ad effectiveness without collecting personal data.</p>
+
+        <h2>6. Android-Specific Privacy Features</h2>
+        
+        <h3>Google Advertising ID</h3>
+        <p>On Android devices, you can control ad personalization:</p>
+        <ul>
+            <li><strong>Settings → Google → Ads</strong></li>
+            <li>Enable <strong>"Opt out of Ads Personalization"</strong></li>
+            <li>Or <strong>"Reset advertising ID"</strong> to get a new anonymous identifier</li>
+        </ul>
+
+        <p><strong>Note:</strong> MakoMadness already uses non-personalized ads by default, but these settings give you additional control.</p>
+
+        <h2>7. Data Security</h2>
         
         <p>We implement appropriate security measures to protect information:</p>
         <ul>
-            <li>Game data is stored locally on your device</li>
-            <li>Third-party services use industry-standard encryption</li>
+            <li>Game data is stored locally on your device using industry-standard secure storage</li>
+            <li>Third-party services use industry-standard encryption for data transmission</li>
             <li>We do not store personal information on our servers</li>
+            <li>Anonymous data transmitted to third parties uses secure HTTPS connections</li>
+            <li>We regularly review and update our security practices</li>
+            <li>Access to backend systems is restricted and monitored</li>
         </ul>
 
-        <h2>6. Data Retention and Deletion</h2>
+        <h2>8. Data Retention and Deletion</h2>
         
         <ul>
-            <li><strong>Local Data:</strong> You can delete all game data by uninstalling MakoMadness from your device</li>
+            <li><strong>Local Data:</strong> Stored on your device indefinitely until you uninstall MakoMadness or clear app data</li>
             <li><strong>Leaderboard Data:</strong> Anonymous scores are retained for leaderboard functionality. To request deletion, contact us at rrj@agologistics.com</li>
-            <li><strong>Analytics Data:</strong> Aggregated analytics data may be retained indefinitely but contains no personal information</li>
+            <li><strong>Analytics Data:</strong> Aggregated analytics data may be retained indefinitely but contains no personal information and cannot be linked back to you</li>
+            <li><strong>Advertising Data:</strong> Managed by third-party ad networks according to their retention policies (typically 30-90 days)</li>
         </ul>
 
         <p>For detailed data deletion instructions, visit: <a href="data-deletion.html">Data Deletion Instructions</a></p>
 
-        <h2>7. Your Rights</h2>
+        <h2>9. Your Rights and Choices</h2>
         
         <p>You have the right to:</p>
         <ul>
-            <li>Access information we collect</li>
-            <li>Request deletion of your data</li>
-            <li>Opt out of analytics (by contacting us)</li>
-            <li>Refuse consent and stop using the app</li>
+            <li><strong>Access:</strong> Request information about data we collect (limited to anonymous analytics)</li>
+            <li><strong>Deletion:</strong> Request deletion of your data by contacting us or uninstalling the app</li>
+            <li><strong>Opt-Out:</strong> Disable analytics by contacting us at rrj@agologistics.com</li>
+            <li><strong>Withdraw Consent:</strong> Refuse consent and stop using the app</li>
+            <li><strong>Limit Ad Tracking:</strong> Use device settings to reset advertising IDs or opt out of personalized ads</li>
+            <li><strong>Data Portability:</strong> Request a copy of your data (though we collect minimal data)</li>
         </ul>
 
-        <h2>8. International Users (GDPR Compliance)</h2>
+        <h2>10. International Users (GDPR Compliance)</h2>
         
-        <p>If you are located in the European Economic Area (EEA), you have additional rights under GDPR:</p>
+        <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have additional rights under GDPR:</p>
         <ul>
-            <li>Right to access your data</li>
-            <li>Right to rectification</li>
-            <li>Right to erasure ("right to be forgotten")</li>
-            <li>Right to data portability</li>
+            <li><strong>Right to Access:</strong> Request information about data processing</li>
+            <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
+            <li><strong>Right to Erasure:</strong> "Right to be forgotten" - request data deletion</li>
+            <li><strong>Right to Data Portability:</strong> Receive your data in a structured format</li>
+            <li><strong>Right to Object:</strong> Object to certain data processing activities</li>
+            <li><strong>Right to Lodge a Complaint:</strong> File a complaint with your local data protection authority</li>
         </ul>
 
-        <h2>9. Changes to This Privacy Policy</h2>
-        
-        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+        <p><strong>Legal Basis for Processing:</strong> We process data based on:</p>
+        <ul>
+            <li>Your consent (which you provide by accepting this Privacy Policy)</li>
+            <li>Legitimate interests (improving game performance, preventing fraud)</li>
+            <li>Contractual necessity (providing game services)</li>
+        </ul>
 
-        <h2>10. Contact Us</h2>
+        <h2>11. California Privacy Rights (CCPA)</h2>
+        
+        <p>If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA):</p>
+        <ul>
+            <li><strong>Right to Know:</strong> Request information about data collection and use</li>
+            <li><strong>Right to Delete:</strong> Request deletion of personal information</li>
+            <li><strong>Right to Opt-Out:</strong> Opt out of "sale" of personal information (we do not sell personal information)</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+        </ul>
+
+        <p>To exercise your rights, contact us at rrj@agologistics.com with "CCPA Request" in the subject line.</p>
+
+        <h2>12. Do Not Sell My Personal Information</h2>
+        
+        <p><strong>We do not sell your personal information.</strong> MakoMadness does not collect personal information that would be considered a "sale" under CCPA or other privacy laws. Anonymous advertising identifiers used for showing ads are not considered personal information sales.</p>
+
+        <h2>13. Changes to This Privacy Policy</h2>
+        
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, services, or legal requirements. Changes will be posted on this page with an updated effective date.</p>
+        
+        <ul>
+            <li><strong>Minor Changes:</strong> Updated without re-notification (e.g., clarifications, additional network partners)</li>
+            <li><strong>Material Changes:</strong> We may prompt you to review and accept the updated policy within the app</li>
+        </ul>
+
+        <p>We encourage you to review this policy periodically. Your continued use of MakoMadness after changes constitutes acceptance of the updated Privacy Policy.</p>
+
+        <h2>14. Contact Us</h2>
         
         <div class="contact-info">
             <p><strong>MakoMadness Studios</strong><br>
@@ -160,16 +320,38 @@
             4005 Forest Grove Pass NW<br>
             Acworth, GA 30101<br>
             Email: <a href="mailto:rrj@agologistics.com">rrj@agologistics.com</a></p>
-                       
-            <p>For questions about this Privacy Policy, data deletion requests, or concerns about children's privacy, please contact us at the email above.</p>
-
-             <p>For our complete Terms of Service, visit: <a href="terms-of-service.html">Terms of Service</a></p>
+            
+            <p><strong>For Privacy-Related Inquiries:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Data deletion requests</li>
+                <li>Questions about children's privacy</li>
+                <li>GDPR or CCPA rights requests</li>
+                <li>General privacy concerns</li>
+            </ul>
+            
+            <p>We will respond to all inquiries within 7 business days.</p>
         </div>
 
+        <h2>15. Additional Resources</h2>
+        
+        <p>For more information about online privacy:</p>
+        <ul>
+            <li><strong>FTC COPPA Compliance:</strong> <a href="https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy" target="_blank">ftc.gov/coppa</a></li>
+            <li><strong>GDPR Information:</strong> <a href="https://gdpr.eu/" target="_blank">gdpr.eu</a></li>
+            <li><strong>CCPA Information:</strong> <a href="https://oag.ca.gov/privacy/ccpa" target="_blank">oag.ca.gov/ccpa</a></li>
+            <li><strong>Network Advertising Initiative:</strong> <a href="https://thenai.org/" target="_blank">thenai.org</a></li>
+            <li><strong>Digital Advertising Alliance:</strong> <a href="https://youradchoices.com/" target="_blank">youradchoices.com</a></li>
+        </ul>
+
         <hr style="margin-top: 30px;">
+        <p style="text-align: center; color: #7f8c8d; font-size: 14px;">
+            <a href="terms-of-service.html">Terms of Service</a> | 
+            <a href="data-deletion.html">Data Deletion</a>
+        </p>
         <p style="text-align: center; color: #7f8c8d; font-size: 14px;">
             © 2025 MakoMadness Studios, a division of 2N2AK LLC. All rights reserved.
         </p>
     </div>
 </body>
 </html>
+
